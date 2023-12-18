@@ -51,5 +51,10 @@ public class Program {
 		seller.setDepartment(dep);
 		sellerDao.update(seller);
 		System.out.println("Update complete!");
+		
+		System.out.println("=== TEST 6: seller delete ===");
+		sellerDao.deleteById(1);
+		System.out.println("Delete complete!");
+		
 	}
 }
